@@ -1,8 +1,8 @@
 class Appointment
-  attr_accessor :title, :artist, :patient
+  attr_accessor :date, :artist, :patient
 
-  def initialize(title, patient)
-    @title = title
+  def initialize(date, patient)
+    @date = date
     @patient = patient
     patient.appointments << self
   end
