@@ -16,6 +16,6 @@ class Artist
   end
 
   def genres
-    @genres
+    self.songs.collect{|song| song.genre}
   end
 end
