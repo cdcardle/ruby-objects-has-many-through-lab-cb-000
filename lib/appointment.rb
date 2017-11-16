@@ -4,6 +4,6 @@ class Appointment
   def initialize(title, patient)
     @title = title
     @patient = patient
-    patient.songs << self
+    patient.appointments << self
   end
 end
